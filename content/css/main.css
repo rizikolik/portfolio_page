@@ -20,6 +20,20 @@
     .menu-icon.close .icon-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -5px); }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible;
+    display: inline; }
+    .menu.show .menu-brand {
+      display: block; }
+    .menu.show .menu-nav {
+      display: block; }
+
 body {
   background: #444;
   color: white;
