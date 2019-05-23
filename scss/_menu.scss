@@ -71,7 +71,9 @@
                 transform: translate3d(0,0,0);
             }
             .portrait{
-                background: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+                background: url("../img/JPEG_20190425_232917(1).jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
                border-radius: 50%;
                 width: 250px;
                 height: 250px;

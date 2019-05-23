@@ -105,6 +105,28 @@ main{
               border-bottom:solid 5px $secondary-color ;
         }
 }
+.about-works{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    
+    
+    
+    
+    img{
+        width:100%;
+        height:100%;
+    }
+    .column{
+        flex:100%;
+        padding:4em;
+       
+    }
+    
+}
 
 
 #main-footer{
