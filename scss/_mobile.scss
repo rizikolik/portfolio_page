@@ -13,7 +13,7 @@
 //tablets ,small laptops
 @include mediaMd {
   main {
-    align-items: center;
+    align-items: right;
     text-align: center;
 
     .lg-header {
@@ -21,21 +21,46 @@
       margin-bottom: 1rem;
     }
   }
-  ul.menu-nav,div.menu-brand{
-    float:none;
+  ul.menu-nav,
+  div.menu-brand{
+    float: none;
     width:100%;
+    min-height:0;
+    &.show{
+      transform:translate3d(0,0,0);
+    }
   }
+  .menu-nav{
+    height: 75vh;
+    transform:translate3d(-100%,0,0);
+    font-size:1.5em;
+  }
+  .menu-brand{
+    height: 25vh;
+    transform:translate3d(100%,0,0);
+    .portrait{
+      background:url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+      width:150px;
+      height:150px;
+      
+    }
+    
+  }
+  
+  
+  
 }
 
 
 
+
+
+
+
 @include mediaSm {
-    main {
-         #home h1{
-        margin-top: 10vh;
-        line-height: 10vh;
+    main#home h1{
+      margin-top: 10vh;
     }
-        }
         
     
 }
