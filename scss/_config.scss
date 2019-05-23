@@ -29,6 +29,13 @@ $background-opacity:0.7;
         }
     } 
 }
+@function setTextColor($color){
+@if(lightness($color) >40) {
+  @return #000;
+}@else{
+  @return #fff;
+}
+}
 //Media Mixins 
 
 

@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: #fff;
     transition: all 0.8s ease-out; }
   .menu-icon.close {
     transform: rotate(180deg); }
@@ -71,7 +71,7 @@
     padding: 1em 0;
     font-size: 2em;
     font-weight: 300;
-    color: white;
+    color: #fff;
     text-decoration: none;
     cursor: pointer; }
     .menu .nav-link:hover {
@@ -89,40 +89,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: right;
-    text-align: center; }
-    main .lg-header {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-brand {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-brand.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 1.5em; }
-  .menu-brand {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-brand .portrait {
-      background: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-      width: 150px;
-      height: 150px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 body {
   background: #444;
-  color: white;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -176,7 +145,7 @@ header {
 
 main {
   padding: 4em;
-  height: 100%; }
+  min-height: calc(100vh- 60px); }
   main .icons {
     margin-top: 1em; }
     main .icons a {
@@ -186,3 +155,71 @@ main {
         transition: all 0.8s ease-out; }
   main#home {
     overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
+.about-me {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-me .bio-image {
+    grid-area: bioimage;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 3px #eece1a;
+    margin: auto; }
+  .about-me .bio {
+    grid-area: bio;
+    font-size: 1.1em; }
+  .about-me .job-1 {
+    grid-area: job1; }
+  .about-me .job-2 {
+    grid-area: job2; }
+  .about-me .job-3 {
+    grid-area: job3; }
+  .about-me .jobs {
+    background: #515151;
+    padding: 0.5em;
+    border-bottom: solid 5px #eece1a; }
+
+#main-footer {
+  bottom: 0;
+  text-align: center;
+  padding: 1em;
+  background: #2b2b2b; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: right;
+    text-align: center; }
+    main .lg-header {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-brand {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-brand.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 1.5em; }
+  .menu-brand {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-brand .portrait {
+      background: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+      width: 150px;
+      height: 150px; }
+  .about-me {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
