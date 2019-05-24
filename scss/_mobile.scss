@@ -12,6 +12,9 @@
 
 //tablets ,small laptops
 @include mediaMd {
+  body{
+    margin:0 auto;
+  }
   main {
     align-items: right;
     text-align: center;
@@ -55,6 +58,32 @@
        "job3";
     grid-template-columns:1fr;
  } 
+
+ .row{
+   
+   
+  .item{
+    display:block;
+  
+   
+     img,.desc{
+     
+     
+       margin-top: 0.3em;
+       border:solid 3px yellow;
+       font-size:0.8em;
+       width:100%;
+       height:auto;
+       
+     }
+     
+    
+  }
+   
+
+ }
+ 
+
   
   
   
