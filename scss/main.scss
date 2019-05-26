@@ -111,30 +111,72 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     width:100%;
     
     img{
-        width:40em;
-        height:35em;
+        width:38em;
+        height:28em;
+        border:solid 4px gray;
+        border-radius: 2%;
+        &:hover{
+            opacity: 0.6;
+            
+        }
+        &.tech-logos{
+            
+            width:100px;
+            height:80px;
+            border:none;
+        }
     }
     
  .item{
     display:flex;
     flex:50%;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: row wrap;
     border:solid 3px white;
+    border-radius: 30px;
+    .desc{
+        text-align:center;
+           align-items: center;
+           justify-content: center;
+           align-content: center;
+    }
     &:hover{
         border:solid 5px $secondary-color;
     }
     margin-top:2em;
     padding:0.4em;
     }
+    h2{
+        text-align:center;
+        font-size:2em;
+        color:gray;
+    }
+    p{
+        font-size:0.9em;
+        color:setTextColor($secondary-color);
+    }
     .item-1{
-        background: white;
+        background:#4BC3C1;
+        color:setTextColor($secondary-color);
+    }
+    .item-2{
+        background:wheat;
+        color:setTextColor($secondary-color);
+    }
+    .button-dark{
+        background:black;
+        border:solid 1px black;
+        width:4em;
+        
+        
     }
   
     

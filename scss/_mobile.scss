@@ -63,14 +63,17 @@
    
    
   .item{
-    display:block;
+    display:inline-block;
+    .tech-logos{
+      display:none;
+    }
   
    
      img,.desc{
      
      
        margin-top: 0.3em;
-       border:solid 3px yellow;
+       
        font-size:0.8em;
        width:100%;
        height:auto;
