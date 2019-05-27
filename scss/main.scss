@@ -107,27 +107,21 @@ main{
         }
 }
 .about-works{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width:100%;
-    
-    img{
+   img{
         width:38em;
+        margin-right:0;
+        padding-right:0;
         height:28em;
         border:solid 4px gray;
         border-radius: 2%;
+        
         &:hover{
             opacity: 0.6;
             
         }
         &.tech-logos{
-            
-            width:100px;
-            height:80px;
+            width:60px;
+            height:50px;
             border:none;
         }
     }
@@ -135,13 +129,24 @@ main{
  .item{
     display:flex;
     flex:50%;
-    
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: row wrap;
     border:solid 3px white;
     border-radius: 30px;
+    width:100%;
+    h2{
+        text-align:center;
+        color:black;
+        font-size:2.5em;
+        font-weight:900;
+    }
+    p{
+        font-size:1.2em;
+        font-weight:600;
+        color:setTextColor($secondary-color);
+    }
     .desc{
         text-align:center;
            align-items: center;
@@ -154,16 +159,7 @@ main{
     margin-top:2em;
     padding:0.4em;
     }
-    h2{
-        text-align:center;
-        font-size:2em;
-        color:gray;
-    }
-    p{
-        font-size:0.9em;
-        color:setTextColor($secondary-color);
-    }
-    .item-1{
+   .item-1{
         background:#4BC3C1;
         color:setTextColor($secondary-color);
     }
@@ -171,12 +167,11 @@ main{
         background:wheat;
         color:setTextColor($secondary-color);
     }
-    .button-dark{
+    .buttons{
+        width:200px;
         background:black;
-        border:solid 1px black;
-        width:4em;
-        
-        
+        border:solid 2px black;
+        border-radius:5%;
     }
   
     

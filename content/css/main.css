@@ -187,60 +187,62 @@ main {
     padding: 0.5em;
     border-bottom: solid 5px #eece1a; }
 
-.about-works {
+.about-works img {
+  width: 38em;
+  margin-right: 0;
+  padding-right: 0;
+  height: 28em;
+  border: solid 4px gray;
+  border-radius: 2%; }
+  .about-works img:hover {
+    opacity: 0.6; }
+  .about-works img.tech-logos {
+    width: 60px;
+    height: 50px;
+    border: none; }
+
+.about-works .item {
   display: flex;
-  flex-direction: column;
+  flex: 50%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 100%; }
-  .about-works img {
-    width: 38em;
-    height: 28em;
-    border: solid 4px gray;
-    border-radius: 2%; }
-    .about-works img:hover {
-      opacity: 0.6; }
-    .about-works img.tech-logos {
-      width: 100px;
-      height: 80px;
-      border: none; }
-  .about-works .item {
-    display: flex;
-    flex: 50%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: row wrap;
-    border: solid 3px white;
-    border-radius: 30px;
-    margin-top: 2em;
-    padding: 0.4em; }
-    .about-works .item .desc {
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      align-content: center; }
-    .about-works .item:hover {
-      border: solid 5px #eece1a; }
-  .about-works h2 {
+  flex-wrap: row wrap;
+  border: solid 3px white;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 2em;
+  padding: 0.4em; }
+  .about-works .item h2 {
     text-align: center;
-    font-size: 2em;
-    color: gray; }
-  .about-works p {
-    font-size: 0.9em;
+    color: black;
+    font-size: 2.5em;
+    font-weight: 900; }
+  .about-works .item p {
+    font-size: 1.2em;
+    font-weight: 600;
     color: #000; }
-  .about-works .item-1 {
-    background: #4BC3C1;
-    color: #000; }
-  .about-works .item-2 {
-    background: wheat;
-    color: #000; }
-  .about-works .button-dark {
-    background: black;
-    border: solid 1px black;
-    width: 4em; }
+  .about-works .item .desc {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .about-works .item:hover {
+    border: solid 5px #eece1a; }
+
+.about-works .item-1 {
+  background: #4BC3C1;
+  color: #000; }
+
+.about-works .item-2 {
+  background: wheat;
+  color: #000; }
+
+.about-works .buttons {
+  width: 200px;
+  background: black;
+  border: solid 2px black;
+  border-radius: 5%; }
 
 #main-footer {
   bottom: 0;
