@@ -227,8 +227,25 @@ main {
     align-items: center;
     justify-content: center;
     align-content: center; }
+    .about-works .item .desc .buttons {
+      width: 200px;
+      text-align: center;
+      margin: 0.5em auto;
+      padding: 1em;
+      display: block; }
+      .about-works .item .desc .buttons:hover {
+        font-size: 1.3em; }
+    .about-works .item .desc .button-dark {
+      border: solid 2px black;
+      border-radius: 25px;
+      padding-top: 1em;
+      background: black; }
+    .about-works .item .desc .button-light {
+      border: solid 2px;
+      border-radius: 25px;
+      background: #1E90FF; }
   .about-works .item:hover {
-    border: solid 5px #eece1a; }
+    border: solid 5px white; }
 
 .about-works .item-1 {
   background: #4BC3C1;
@@ -238,11 +255,25 @@ main {
   background: wheat;
   color: #000; }
 
-.about-works .buttons {
-  width: 200px;
-  background: black;
-  border: solid 2px black;
-  border-radius: 5%; }
+.about-works .item-3 {
+  background: #66ffcc;
+  color: #000; }
+
+.about-works .item-4 {
+  background: #9933ff;
+  color: #000; }
+
+.about-works .item-5 {
+  background: #ffffff;
+  color: #000; }
+
+.about-works .item-6 {
+  background: #ccffff;
+  color: #000; }
+
+.about-works .item-7 {
+  background: wheat;
+  color: #000; }
 
 #main-footer {
   bottom: 0;
