@@ -49,6 +49,7 @@ main{
     padding:4em;
     min-height:calc(100vh- 60px);
     .icons{
+        font-size:2em;
         margin-top:1em;                                             
         a{
             padding:0.4em;
@@ -57,8 +58,6 @@ main{
                 @include easeOut();
             }
         }
-        
-        
     }
     &#home{
         overflow:hidden;
@@ -69,43 +68,70 @@ main{
     }
 }
         
-    .about-me{
-            
-        display: grid;
-        grid-gap: 30px;
-        grid-template-areas:
-        "bioimage bio bio"
-        "job1 job2 job3";
-        grid-template-columns:repeat(3,1fr);
-        .bio-image{
-            grid-area:bioimage;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            border:solid 3px $secondary-color;
-            margin:auto;
-        }
-        .bio{
-              grid-area:bio; 
-              font-size: 1.1em;
-        }
-        .job-1{
-              grid-area:job1;
-            
-        }
-        .job-2{
-              grid-area:job2;
-        }
-        .job-3{
-              grid-area:job3;
-           
-        }
-        .jobs{
-              background: lighten($primary-color,5);
-              padding:0.5em;
-              border-bottom:solid 5px $secondary-color ;
-        }
+.about-me{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+    grid-template-columns:repeat(3,1fr);
+    .bio-image{
+        grid-area:bioimage;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border:solid 3px $secondary-color;
+        margin:auto;
+    }
+    .bio{
+          grid-area:bio; 
+          font-size: 1.1em;
+    }
+    .job-1{
+          grid-area:job1;
+        
+    }
+    .job-2{
+          grid-area:job2;
+    }
+    .job-3{
+          grid-area:job3;
+       
+    }
+    .jobs{
+          background: lighten($primary-color,5);
+          padding:0.5em;
+          border-bottom:solid 5px $secondary-color ;
+    }
 }
+
+/// contact page
+.boxes{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+  
+    margin-top:1em;
+    div{
+        border:2px solid white;
+        font-size:1.8em;
+        padding:1.2em 2em;
+        margin:0.2em auto;
+        
+        @include easeOut;
+        &:hover{
+            padding:0.5em 1.5em;
+            background:$secondary-color;
+            color:setTextColor($secondary-color);
+            span{
+                color:setTextColor($secondary-color);
+            }
+        }
+    }
+}
+
 .about-works{
    img{
         width:38em;
