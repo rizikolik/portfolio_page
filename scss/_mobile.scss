@@ -15,6 +15,9 @@
   body{
     margin:0 auto;
   }
+//index page  
+  
+  
   main {
     .icons{
       font-size:1em;
@@ -27,9 +30,15 @@
       margin-bottom: 1rem;
     }
     .sm-header{
-      font-size:1.5em;
+     display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    text-align:left;
+    font-size:1.5em;
+    width:15em;
     }
   }
+  //menu
   ul.menu-nav,
   div.menu-brand{
     float: none;
@@ -54,7 +63,6 @@
       height:150px;
       
     }
-    
   }
   // CONTACT PAGE
   .boxes{
@@ -62,6 +70,7 @@
       font-size:1em;
     }
   }
+  //about page
   .about-me{
    grid-template-areas:
        "bioimage"
@@ -71,44 +80,26 @@
        "job3";
     grid-template-columns:1fr;
  } 
-
+//works page
  .row{
-   
-   
   .item{
     display:inline-block;
     .tech-logos{
       display:none;
-    }
-  
-   
-     img,.desc{
-     
-     
-       margin-top: 0.3em;
-       
-       font-size:0.8em;
-       width:100%;
-       height:auto;
-       
-     }
-     
-    
   }
-   
-
- }
+  img,.desc{
+    margin-top: 0.3em;
+    font-size:0.8em;
+    width:100%;
+    height:auto;
+    }
+  }
+}
  
-
-  
-  
-  
 }
 
 @include mediaSm {
     main#home h1{
       margin-top: 10vh;
     }
-        
-    
 }

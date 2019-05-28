@@ -27,6 +27,10 @@ h3{
      margin-top:10vh;
 }
 &.sm-header{
+    div{
+     display:inline;   
+    }
+    
     font-size:2rem;
     margin-bottom:2em;
     padding:0.2em 1em;
