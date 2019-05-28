@@ -84,32 +84,31 @@
 
         }
         .nav-item{
+            padding:0.5em 0;
+            margin-bottom: 0.39em;
             transform:translate3d(600px ,0  , 0 );
-            @include easeOut;
+            
             &.show{
                 transform: translate3d(0,0,0);
             }
             &.current >a{
               color: $secondary-color;  
             }
-            
+           @include easeOut; 
         }
         .nav-link{
             display:inline block;
             position:relative;
-            padding:1em 0;
+            padding:1.2em 0;
+            margin-top:10em;
             font-size:2em;
             font-weight:300;
             color:setTextColor($primary-color);
             text-decoration:none;
-            cursor:pointer;
             
             &:hover{
                 color:$secondary-color;
-                
             }
-            
-            
         }
 }
 
