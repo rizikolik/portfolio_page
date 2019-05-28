@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage":"https://rizikolik.github.io/portfolio_page",
+  "homepage":"https://rizikolik.github.io/portfolio_page/",
   "scripts": {
     "sass": "node-sass -w scss/ -o content/css --recursive",
     "deploy":"gh-pages -d content"
