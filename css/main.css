@@ -308,9 +308,13 @@ main {
   main {
     align-items: right;
     text-align: center; }
+    main .icons {
+      font-size: 1em; }
     main .lg-header {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .sm-header {
+      font-size: 1.5em; }
   ul.menu-nav,
   div.menu-brand {
     float: none;
