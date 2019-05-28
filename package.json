@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
+  "homepage":"https://rizikolik.github.io/portfolio_page",
   "scripts": {
-    "sass": "node-sass -w scss/ -o content/css --recursive"
+    "sass": "node-sass -w scss/ -o content/css --recursive",
+    "deploy":"gh-pages -d content"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/rizikolik/portfolio_page#readme",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
   }
 }
