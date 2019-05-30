@@ -11,6 +11,6 @@
      <li>NPM</li>
      <li>VANİLLAJS</li>
     </ul>
-    <button style="width:10em;border:2px solid white;background:#8EDFFF;"><a>Live Version</a></button>
+    <button style="width:10em;border:2px solid white;background:#8EDFFF;"><a href="https://rizikolik.github.io/portfolio_page/">Live Version</a></button>
  </body>
 </html>
