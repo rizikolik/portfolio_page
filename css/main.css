@@ -277,28 +277,31 @@ main {
 .about-works .item-1 {
   background: #4BC3C1;
   color: #000; }
-
 .about-works .item-2 {
-  background: wheat;
+  background: #f4f5f6;
   color: #000; }
 
 .about-works .item-3 {
-  background: #66ffcc;
+  background: wheat;
   color: #000; }
 
 .about-works .item-4 {
-  background: #9933ff;
+  background: #66ffcc;
   color: #000; }
 
 .about-works .item-5 {
-  background: #ffffff;
+  background: #9933ff;
   color: #000; }
 
 .about-works .item-6 {
-  background: #ccffff;
+  background: #ffffff;
   color: #000; }
 
 .about-works .item-7 {
+  background: #ccffff;
+  color: #000; }
+
+.about-works .item-8 {
   background: wheat;
   color: #000; }
 
